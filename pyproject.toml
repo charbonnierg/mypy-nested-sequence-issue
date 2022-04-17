@@ -1,0 +1,16 @@
+[project]
+name = "mypy-nested-sequence"
+version = "0.1.0"
+description = "Illustrate mypy issue with nested sequence"
+authors = [
+    { name = "charbonnierg", email = "guillaume.charbonnier@araymond.com" },
+]
+license = { text = "MIT" }
+dependencies = ["mypy==0.942"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
